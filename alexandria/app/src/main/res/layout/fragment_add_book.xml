@@ -37,18 +37,27 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:id="@+id/eancontainer2"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eancontainer"
+            android:layout_centerHorizontal="true"
+            >
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/bookTitle"
             android:textSize="@dimen/head_line"
-            android:textIsSelectable="true"
             android:textStyle="bold"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="10dp"
             android:paddingRight="20dp"
             android:layout_below="@+id/eancontainer"
             android:layout_alignLeft="@+id/eancontainer"
-            android:layout_alignStart="@+id/eancontainer"/>
+            android:layout_alignStart="@+id/eancontainer" />
 
         <TextView
             android:layout_width="200dp"
@@ -67,20 +76,20 @@
             android:id="@+id/authors"
             android:gravity="end"
             android:textSize="@dimen/small_fontsize"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_below="@+id/bookSubTitle"
             android:layout_alignRight="@+id/eancontainer"
             android:layout_alignEnd="@+id/eancontainer"
             />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="260dp"
             android:id="@+id/bookCover"
             android:contentDescription="@string/book_cover"
             android:layout_alignTop="@+id/authors"
             android:layout_alignLeft="@+id/eancontainer"
-            android:layout_alignStart="@+id/eancontainer"/>
+            android:layout_alignStart="@+id/eancontainer" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -88,7 +97,7 @@
             android:id="@+id/categories"
             android:textSize="@dimen/small_fontsize"
             android:layout_below="@+id/bookCover"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_alignLeft="@+id/eancontainer"
             android:layout_alignStart="@+id/eancontainer"/>
 
@@ -98,7 +107,8 @@
             android:layout_height="50dip"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/bookCover">
 
             <Button
                 android:layout_width="wrap_content"
@@ -124,6 +134,6 @@
                 />
 
         </LinearLayout>
-
+</LinearLayout>
     </RelativeLayout>
 </FrameLayout>

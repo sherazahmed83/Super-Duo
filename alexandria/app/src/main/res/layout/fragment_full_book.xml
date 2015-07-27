@@ -32,13 +32,13 @@
 
                 <ImageView
                     android:layout_width="300dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="260dp"
                     android:id="@+id/fullBookCover"
                     android:contentDescription="@string/book_cover"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:layout_below="@+id/fullBookTitle"
                     android:layout_alignLeft="@+id/fullBookTitle"
-                    android:layout_alignStart="@+id/fullBookTitle"/>
+                    android:layout_alignStart="@+id/fullBookTitle" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -47,11 +47,10 @@
                     android:maxLines="5"
                     android:ellipsize="end"
                     android:textSize="18sp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="5dp"
                     android:layout_alignTop="@+id/fullBookCover"
                     android:layout_toRightOf="@+id/fullBookCover"
-                    android:layout_toEndOf="@+id/fullBookCover"/>
+                    android:layout_toEndOf="@+id/fullBookCover" />
 
 
                 <TextView
